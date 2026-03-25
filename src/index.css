@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-slate-900 text-slate-100;
+  }
+}
+
+@layer utilities {
+  .bg-sunrise-gradient {
+    /* From Biological Fog (slate/gray) to vibrant sunrise (Emerald Green #10B981, Vibrant Gold #F59E0B, Sky Blue #87CEEB) */
+    background: linear-gradient(135deg, #1f2937 0%, #10B981 40%, #F59E0B 75%, #87CEEB 100%);
+  }
+  .text-sunrise-gradient {
+    background: linear-gradient(to right, #10B981, #F59E0B, #87CEEB);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
